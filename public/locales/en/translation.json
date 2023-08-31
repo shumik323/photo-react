@@ -1,5 +1,7 @@
 {
   "translate": "translate",
   "language": "English",
-  "PageNotFound": "Page Not Found"
+  "PageNotFound": "Page Not Found",
+  "pageError": "page error",
+  "reloadPage": "reload page"
 }

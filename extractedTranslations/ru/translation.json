@@ -1,6 +1,12 @@
 {
+  "PageNotFound": "PageNotFound",
   "aboutTitle": "aboutTitle",
   "language": "language",
-  "pageNotFound": "страница не найдена",
+  "pageError": "pageError",
+  "pageNotFound": "pageNotFound",
+  "reloadPage": "reloadPage",
+  "throw error": "throw error",
+  "throwError": "throwError",
+  "throwRrror": "throwRrror",
   "title": "title"
 }
