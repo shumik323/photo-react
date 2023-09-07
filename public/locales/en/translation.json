@@ -1,7 +1,12 @@
 {
-  "translate": "translate",
-  "language": "English",
-  "PageNotFound": "Page Not Found",
-  "pageError": "page error",
-  "reloadPage": "reload page"
+  "Тестовый пример": "Test example",
+  "Перевод": "Translate",
+  "Язык": "English",
+  "новый перевод": "новый перевод",
+  "pageNotFound": "Page not found",
+  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+  "Обновить страницу": "Reload page",
+  "throw error": "throw error",
+  "homePage": "Main",
+  "aboutPage": "About us"
 }
