@@ -1,6 +1,14 @@
 {
   "PageNotFound": "PageNotFound",
+  "aboutPage": "aboutPage",
   "aboutTitle": "aboutTitle",
+  "homePage": "homePage",
   "language": "language",
+  "pageError": "pageError",
+  "pageNotFound": "pageNotFound",
+  "reloadPage": "reloadPage",
+  "throw error": "throw error",
+  "throwError": "throwError",
+  "throwRrror": "throwRrror",
   "title": "title"
 }
