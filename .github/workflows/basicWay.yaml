@@ -21,10 +21,10 @@ jobs:
       - name: install modules
         run: yarn install --frozen-lockfile
       - name: build production project
-        run: yarn build:prod
+        run: yarn run build:prod
       - name: linting typescript
-        run: yarn lint:ts
+        run: yarn run lint:ts
       - name: linting css
-        run: yarn lint:scss
+        run: yarn run lint:scss
       - name: unit testing
-        run: yarn test:unit
+        run: yarn run test:unit
