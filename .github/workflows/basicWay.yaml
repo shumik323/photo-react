@@ -9,22 +9,38 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 17.x ]
+        node-version: [ 16.x ]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+
       - name: Staring Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
+
       - name: install modules
-        run: yarn install --frozen-lockfile
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install --frozen-lockfile
+
       - name: build production project
-        run: yarn run build:prod
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build:prod
+
       - name: linting typescript
-        run: yarn run lint:ts
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: lint:ts
+
       - name: linting css
-        run: yarn run lint:scss
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: lint:scss
+
       - name: unit testing
-        run: yarn run test:unit
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test:unit
