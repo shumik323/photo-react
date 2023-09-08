@@ -54,8 +54,6 @@
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.6.0",
     "eslint": "^8.10.0",
-    "concurrently": "^7.0.0",
-    "deelay": "^2.0.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-i18next": "^5.1.2",
     "eslint-plugin-import": "^2.25.4",
