@@ -1,52 +1,72 @@
-name: linting, testing, building
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-jobs:
-  pipeline:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 16.x ]
-    steps:
-      - name: send custom message
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TG_NOTIFY_BOT }}
-          token: ${{ secrets.TG_NOTIFY_BOT }}
-          message: |
-            The ${{ github.event_name }} event triggered final step.
-            echo This event is a pull request that had an assignee removed.
-
+#name: linting, testing, building
+#on:
+#  push:
+#    branches: [ master ]
+#  pull_request:
+#    branches: [ master ]
+#jobs:
+#  pipeline:
+#    runs-on: ubuntu-latest
+#    strategy:
+#      matrix:
+#        node-version: [ 16.x ]
 #    steps:
-#      - uses: actions/checkout@v2
-#      - name: Staring Node.js ${{ matrix.node-version }}
-#        uses: actions/setup-node@v1
-#        with:
-#          node-version: ${{ matrix.node-version }}
-#          cache: 'yarn'
-#      - name: install modules
-#        run: yarn install --frozen-lockfile
-#      - name: build production project
-#        run: yarn build:prod
-#      - name: linting typescript
-#        run: yarn lint:ts
-#      - name: linting css
-#        run: yarn lint:scss
-#      - name: unit testing
-#        run: yarn test:unit
-#      - name: build storybook
-#        run: yarn storybook:build
-#      - name: build storybook and screenshot testing
-#        run: yarn test:ui:ci
 #      - name: send custom message
 #        uses: appleboy/telegram-action@master
 #        with:
-#          to: ${{ secrets.TELEGRAM_TO }}
-#          token: ${{ secrets.TELEGRAM_TOKEN }}
+#          to: ${{ secrets.TG_NOTIFY_BOT }}
+#          token: ${{ secrets.TG_NOTIFY_BOT }}
 #          message: |
 #            The ${{ github.event_name }} event triggered final step.
 #            echo This event is a pull request that had an assignee removed.
-  
+#
+##    steps:
+##      - uses: actions/checkout@v2
+##      - name: Staring Node.js ${{ matrix.node-version }}
+##        uses: actions/setup-node@v1
+##        with:
+##          node-version: ${{ matrix.node-version }}
+##          cache: 'yarn'
+##      - name: install modules
+##        run: yarn install --frozen-lockfile
+##      - name: build production project
+##        run: yarn build:prod
+##      - name: linting typescript
+##        run: yarn lint:ts
+##      - name: linting css
+##        run: yarn lint:scss
+##      - name: unit testing
+##        run: yarn test:unit
+##      - name: build storybook
+##        run: yarn storybook:build
+##      - name: build storybook and screenshot testing
+##        run: yarn test:ui:ci
+##      - name: send custom message
+##        uses: appleboy/telegram-action@master
+##        with:
+##          to: ${{ secrets.TELEGRAM_TO }}
+##          token: ${{ secrets.TELEGRAM_TOKEN }}
+##          message: |
+##            The ${{ github.event_name }} event triggered final step.
+##            echo This event is a pull request that had an assignee removed.
+#
+name: telegram message
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: send telegram message on push
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TG_NOTIFY_BOT }}
+          token: ${{ secrets.TG_TOKEN }}
+          message: |
+            ${{ github.actor }} created commit:
+            Commit message: ${{ github.event.commits[0].message }}
+            
+            Repository: ${{ github.repository }}
+            
+            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
