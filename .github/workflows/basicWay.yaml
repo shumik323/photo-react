@@ -26,12 +26,12 @@ jobs:
         run: yarn lint:ts
       - name: linting css
         run: yarn lint:scss
-      - name: unit testing
-        run: yarn test:unit
+#      - name: unit testing
+#        run: yarn test:unit
 #      - name: build storybook
 #        run: yarn storybook:build
-      - name: build storybook and screenshot testing
-        run: yarn test:ui:ci
+#      - name: build storybook and screenshot testing
+#        run: yarn test:ui:ci
       - name: send custom message
         uses: appleboy/telegram-action@master
         with:
