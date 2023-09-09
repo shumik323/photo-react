@@ -1,11 +1,12 @@
 {
   "Тестовый пример": "Test example",
   "Перевод": "Translate",
-  "Язык": "English",
+  "language": "English",
+  "shortLanguage": "EN",
   "новый перевод": "новый перевод",
   "pageNotFound": "Page not found",
-  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
-  "Обновить страницу": "Reload page",
+  "pageError": "Произошла непредвиденная ошибка",
+  "reloadPage": "Reload page",
   "throw error": "throw error",
   "homePage": "Main",
   "aboutPage": "About us"
