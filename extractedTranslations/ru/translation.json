@@ -1,4 +1,5 @@
 {
+  "": "",
   "PageNotFound": "PageNotFound",
   "aboutPage": "aboutPage",
   "aboutTitle": "aboutTitle",
@@ -7,6 +8,8 @@
   "pageError": "pageError",
   "pageNotFound": "pageNotFound",
   "reloadPage": "reloadPage",
+  "signIn": "signIn",
+  "singIn": "singIn",
   "throw error": "throw error",
   "throwError": "throwError",
   "throwRrror": "throwRrror",
