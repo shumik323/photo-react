@@ -12,7 +12,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Ligth: Story = {
+export const Primary: Story = {
     args: {
         isOpen: true,
         children: '                Lorem ipsum dolor sit amet.\n'
@@ -21,7 +21,7 @@ export const Ligth: Story = {
     },
 };
 
-export const Dark: Story = {
+export const PrimaryDark: Story = {
     args: {
         isOpen: true,
         children: '                Lorem ipsum dolor sit amet.\n'
@@ -29,4 +29,4 @@ export const Dark: Story = {
             + '                Lorem ipsum dolor sit amet.',
     },
 };
-Dark.decorators = [ThemesDecorator(Theme.DARK)];
+PrimaryDark.decorators = [ThemesDecorator(Theme.DARK)];
