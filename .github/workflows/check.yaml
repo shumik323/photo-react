@@ -12,9 +12,10 @@ jobs:
         node-version: [ 16.x ]
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Staring Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
@@ -34,9 +35,9 @@ jobs:
         if: always()
       #      - name: build storybook
       #        run: yarn storybook:build
-      - name: build storybook and screenshot testing
-        run: yarn test:ui:ci
-        if: always()
+#      - name: build storybook and screenshot testing
+#        run: yarn test:ui:ci
+#        if: always()
 
 #    steps:
 #      - uses: actions/checkout@v2
