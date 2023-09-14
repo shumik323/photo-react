@@ -53,6 +53,7 @@ module.exports = {
             code: 120,
             ignoreComments: true,
         }],
+        'no-param-reassign': 'off',
     },
     globals: {
         __IS_DEV__: true,
