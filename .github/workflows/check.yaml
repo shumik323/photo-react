@@ -33,8 +33,8 @@ jobs:
       - name: unit testing
         run: yarn test:unit
         if: always()
-      #      - name: build storybook
-      #        run: yarn storybook:build
+#            - name: build storybook
+#              run: yarn storybook:build
 #      - name: build storybook and screenshot testing
 #        run: yarn test:ui:ci
 #        if: always()
