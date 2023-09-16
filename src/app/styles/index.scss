@@ -4,15 +4,14 @@
 @import "themes/dark";
 
 .app,
-.app_modal {
-    color: var(--primary-color);
+.app-modal, {
     font: var(--font-m);
+    color: var(--primary-color);
 }
 
 .app {
-    min-height: 100vh;
     background: var(--bg-color);
-    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    min-height: 100vh;
 }
 
 .content-page {

@@ -12,7 +12,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Ligth: Story = {
     args: {
         isOpen: true,
         children: '                Lorem ipsum dolor sit amet.\n'
