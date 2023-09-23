@@ -4,9 +4,16 @@
   "aboutPage": "aboutPage",
   "aboutTitle": "",
   "decrement": "decrement",
+  "enter": {
+    "password": "password",
+    "username": "username"
+  },
   "homePage": "homePage",
   "increment": "increment",
   "language": "English",
+  "login": {
+    "submit": "submit"
+  },
   "pageError": "pageError",
   "pageNotFound": "pageNotFound",
   "reloadPage": "reloadPage",
