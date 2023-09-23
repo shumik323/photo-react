@@ -15,6 +15,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
     args: {
         placeholder: 'enter.username',
+        value: 'value',
     },
 };
 
@@ -22,6 +23,7 @@ export const Autofocus: Story = {
     args: {
         placeholder: 'enter.username',
         autofocus: true,
+        value: 'value',
     },
 };
 
@@ -29,6 +31,7 @@ export const PrimaryDark: Story = {
     args: {
         type: 'text',
         placeholder: 'enter.username',
+        value: 'value',
     },
 };
 
