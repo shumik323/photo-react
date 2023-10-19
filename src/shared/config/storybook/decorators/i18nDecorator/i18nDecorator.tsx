@@ -5,9 +5,9 @@ import { Suspense } from 'react';
 import { PageLoader } from 'widgets/PageLoader';
 
 export const i18nDecorator = (Story: StoryFn) => (
-    <Suspense fallback={<PageLoader />}>
-        <I18nextProvider i18n={i18n}>
+    <I18nextProvider i18n={i18n}>
+        <Suspense fallback="">
             <Story />
-        </I18nextProvider>
-    </Suspense>
+        </Suspense>
+    </I18nextProvider>
 );

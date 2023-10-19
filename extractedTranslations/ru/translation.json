@@ -8,12 +8,19 @@
     "password": "password",
     "username": "username"
   },
+  "error": {
+    "auth": "auth"
+  },
+  "formauth": {
+    "title": "title"
+  },
   "homePage": "homePage",
   "increment": "increment",
   "language": "Русский",
   "login": {
     "submit": "submit"
   },
+  "logout": "logout",
   "pageError": "pageError",
   "pageNotFound": "pageNotFound",
   "reloadPage": "reloadPage",

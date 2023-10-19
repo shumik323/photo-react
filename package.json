@@ -59,7 +59,7 @@
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.6.0",
     "deelay": "2.0.0",
-    "eslint": "^8.10.0",
+    "eslint": "^8.48.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-i18next": "^5.1.2",
     "eslint-plugin-import": "^2.25.4",
@@ -94,7 +94,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
-    "axios": "^0.26.1",
+    "axios": "^1.5.1",
     "concurrently": "^7.0.0",
     "i18next": "^21.6.11",
     "i18next-browser-languagedetector": "^6.1.3",
